@@ -10,7 +10,7 @@ jobs:
   build:
     env:
       PIPENV_VENV_IN_PROJECT: 1
-      PIPENV_IGNORE_VIRTUALENVS: 1
+      PIPENV_NO_INHERIT: 1
     runs-on: ubuntu-latest
 
     steps:
