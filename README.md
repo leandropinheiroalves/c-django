@@ -1,3 +1,7 @@
+Código desenvolvido no módulo de Django do curso Python Pro
+
+Aplicação disponível em https://cdjangoleandopinheiro.herokuapp.com
+
 
 ![example workflow](https://github.com/leandropinheiroalves/c-django/actions/workflows/django_ci.yml/badge.svg)
 [![codecov](https://codecov.io/gh/leandropinheiroalves/c-django/branch/main/graph/badge.svg?token=4CQGVMIC9R)](https://codecov.io/gh/leandropinheiroalves/c-django)
