@@ -26,11 +26,3 @@ jobs:
     - name: Lint with flake8
       run: |
         pipenv run flake8 .
-    - name: Test with pytest
-      run: |
-        pipenv run pytest cdjango --cov=cdjango
-    - name: Posting Coverage
-      env:
-        CODECOV_TOKEN: cd38efc2-5c15-497d-beaf-ab4acb0c34b3
-      run: |
-        pipenv run codecov
