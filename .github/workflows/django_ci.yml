@@ -23,6 +23,9 @@ jobs:
       run: |
         pip install pipenv
         pipenv sync --dev
+    - name: Creating .env
+      run: |
+        cp contrib/env-sample .env
     - name: Lint with flake8
       run: |
         pipenv run flake8 .
@@ -31,4 +34,6 @@ jobs:
         pipenv run pytest --cov=cdjango
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v2
+      run: |
+        pipenv run codecov
 
