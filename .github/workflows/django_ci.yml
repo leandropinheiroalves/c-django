@@ -36,4 +36,3 @@ jobs:
       uses: codecov/codecov-action@v2
       run: |
         pipenv run codecov
-
