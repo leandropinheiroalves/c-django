@@ -5,17 +5,18 @@ name = "pypi"
 
 [packages]
 django = "*"
-pytest = "*"
 gunicorn = "*"
-pytest-django = "*"
 python-decouple = "*"
 dj-database-url = "*"
 psycopg2-binary = "*"
+codecov = "*"
+django-s3-folder-storage = "*"
 
 [dev-packages]
 flake8 = "*"
 pytest-cov = "*"
-codecov = "*"
+pytest-django = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.8"
