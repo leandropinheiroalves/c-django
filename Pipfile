@@ -20,6 +20,7 @@ flake8 = "*"
 pytest-cov = "*"
 pytest-django = "*"
 pytest = "*"
+model-mommy = "*"
 
 [requires]
 python_version = "3.8"
