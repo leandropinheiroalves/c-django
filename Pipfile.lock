@@ -307,6 +307,7 @@
                 "sha256:f7e54567937ebcbe938c4df1075ec891587faeb7c74184b88cf2894e47c86116"
             ],
             "index": "pypi",
+
             "version": "==1.5.4"
         },
         "setuptools": {
