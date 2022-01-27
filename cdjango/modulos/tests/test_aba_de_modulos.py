@@ -7,23 +7,21 @@ from cdjango.modulos.models import Modulo
 
 
 @pytest.fixture
-def modulo(db):
-    return mommy.make(Modulo)
+def modulos(db):
+    return mommy.make(Modulo, 2)
 
 
 @pytest.fixture
-def resp(client, modulo):
-    resp = client.get(reverse('modulos:detalhe', kwargs={'slug': modulo.slug}))
+def resp(client, modulos):
+    resp = client.get(reverse('base:home'))
     return resp
 
 
-def test_titulo(resp, modulo: Modulo):
-    assert_contains(resp, modulo.titulo)
+def test_titulos_dos_modulos(resp, modulos):
+    for modulo in modulos:
+        assert_contains(resp, modulo.titulo)
 
 
-def test_descricao(resp, modulo: Modulo):
-    assert_contains(resp, modulo.descricao)
-
-
-def test_publico(resp, modulo: Modulo):
-    assert_contains(resp, modulo.publico)
+def test_link_dos_modulos(resp, modulos):
+    for modulo in modulos:
+        assert_contains(resp, modulo.get_absolute_url())
