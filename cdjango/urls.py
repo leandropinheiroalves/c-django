@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('cdjango.base.urls')),
     path('aperitivos/', include('cdjango.aperitivos.urls')),
+    path('modulos/', include('cdjango.modulos.urls')),
 ]
 
 if settings.DEBUG:
