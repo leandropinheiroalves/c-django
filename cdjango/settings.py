@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'cdjango.modulos',
     'ordered_model',
     'django_extensions',
+    'cdjango.turmas',
 ]
 
 MIDDLEWARE = [

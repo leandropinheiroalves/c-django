@@ -22,6 +22,7 @@ urlpatterns = [
     path('', include('cdjango.base.urls')),
     path('aperitivos/', include('cdjango.aperitivos.urls')),
     path('modulos/', include('cdjango.modulos.urls')),
+    path('turmas/', include('cdjango.turmas.urls')),
 ]
 
 if settings.DEBUG:
