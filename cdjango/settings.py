@@ -41,6 +41,10 @@ LOGOUT_REDIRECT_URL = '/'
 # Application definition
 
 INSTALLED_APPS = [
+    'cdjango.base',
+    'cdjango.aperitivos',
+    'cdjango.modulos',
+    'cdjango.turmas',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -48,12 +52,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'collectfast',
     'django.contrib.staticfiles',
-    'cdjango.base',
-    'cdjango.aperitivos',
-    'cdjango.modulos',
     'ordered_model',
     'django_extensions',
-    'cdjango.turmas',
 ]
 
 MIDDLEWARE = [
