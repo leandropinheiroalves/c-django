@@ -11,11 +11,12 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from functools import partial
-import dj_database_url
-from decouple import config, Csv
 
+import dj_database_url
 import sentry_sdk
+from decouple import config, Csv
 from sentry_sdk.integrations.django import DjangoIntegration
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # old BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
     'cdjango.aperitivos',
     'cdjango.modulos',
     'ordered_model',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
